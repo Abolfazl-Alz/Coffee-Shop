@@ -1,0 +1,98 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+        <item name="background">@color/home_background</item>
+        <item name="android:actionMenuTextAppearance">@style/LowerCaseMenuTextAppearance</item>
+    </style>
+
+    <style name="AppTheme.ItemEditor">
+        <item name="android:actionBarStyle">@style/HomeColorActionBar</item>
+        <item name="android:title">@string/item_editor_title</item>
+    </style>
+
+    <style name="AppTheme.Widget.ActionButton" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.WhiteApp">
+        <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+    </style>
+
+    <style name="WhiteActionBar">
+        <item name="android:background">#ffff</item>
+    </style>
+
+    <style name="HomeColorActionBar">
+        <item name="android:background">@color/home_background</item>
+    </style>
+
+    <style name="LowerCaseMenuTextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Home">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Banner" parent="Home">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="Feeds" parent="Home" />
+
+    <style name="AdminPageButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AdminPageHeader">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="line_break">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="backgroundColor">@color/borderColor</item>
+    </style>
+
+    <style name="Register.FieldInputText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:layout_marginStart">@dimen/margin_side_register_items</item>
+        <item name="android:layout_marginEnd">@dimen/margin_side_register_items</item>
+        <item name="android:textColor">@color/registerFiledColor</item>
+        <item name="android:textColorHint">@color/registerHintColor</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="Register">
+        <item name="backgroundColor">#ffff0000</item>
+    </style>
+
+</resources>

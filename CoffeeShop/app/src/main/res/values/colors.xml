@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#EBB442</color>
+    <color name="colorPrimary">#D0CCCD</color>
+    <color name="colorPrimaryDark">#D0AD99</color>
+    <color name="home_background">#EDEDED</color>
+    <color name="borderColor">#707070</color>
+    <color name="itemBackground">#E6D3C4</color>
+    <color name="unSelected">#D3D3D3</color>
+    <color name="darkPrimary">#613B2C</color>
+    <color name="secondDarkPrimary">#884E37</color>
+    <color name="darkBackground">#323232</color>
+    <color name="registerHintColor">#B3B3B3</color>
+    <color name="registerFiledColor">#ffffff</color>
+    <color name="text">#ff000000</color>
+    <color name="textDark">#ffff</color>
+</resources>

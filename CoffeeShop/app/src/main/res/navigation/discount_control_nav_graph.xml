@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListDiscountFragment">
+
+    <fragment
+        android:id="@+id/ListDiscountFragment"
+        android:name="com.futech.coffeeshop.ui.admin.discount.DiscountListFragment"
+        android:label="@string/discount_list_title"
+        tools:layout="@layout/discount_list_fragment">
+
+        <action
+            android:id="@+id/action_ListDiscountFragment_to_InsertDiscountFragment"
+            app:destination="@id/InsertDiscountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InsertDiscountFragment"
+        android:name="com.futech.coffeeshop.ui.admin.discount.InsertDiscountFragment"
+        android:label="@string/generate_discount_fragment"
+        tools:layout="@layout/fragment_insert_discount">
+
+        <action
+            android:id="@+id/action_InsertDiscountFragment_to_ListDiscountFragment"
+            app:destination="@id/ListDiscountFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".ui.edit_account.EditAccount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/first_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/first_name_title"
+            android:textColor="@color/textDark"
+            android:textColorHint="@color/registerHintColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <EditText
+            android:id="@+id/first_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="@string/your_first_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/textDark"
+            android:textColorHint="@color/registerHintColor"
+            android:textSize="24sp"
+            android:maxLength="@integer/name_length"
+            app:layout_constraintTop_toBottomOf="@id/first_name_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name_hint"
+            android:textColor="@color/textDark"
+            android:textColorHint="@color/registerHintColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_name_edit" />
+
+        <EditText
+            android:id="@+id/last_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="@string/your_last_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/textDark"
+            android:maxLength="@integer/lastname_length"
+            android:textColorHint="@color/registerHintColor"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/last_name_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number_label"
+            android:textColor="@color/textDark"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/last_name_edit" />
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone"
+            app:met_mask="#### ### ## ##"
+            app:chainUseRtl="false"
+            android:textSize="24sp"
+            android:maxLength="@integer/phone_number_format_length"
+            android:textColor="@color/textDark"
+            android:textColorHint="@color/registerHintColor"
+            app:layout_constraintTop_toBottomOf="@id/phoneLabel"
+            android:imeOptions="actionDone"
+            android:imeActionLabel="@string/submit_edit"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go_manage_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/manager_address_btn"
+            app:layout_constraintTop_toBottomOf="@id/phoneEdit"
+            app:layout_constraintStart_toStartOf="@id/phoneEdit"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkPrimary"
+            android:text="@string/submit_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/go_manage_address" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkPrimary"
+            android:text="@string/log_out"
+            android:background="#00000000"
+            android:textAllCaps="false"
+            android:textColor="@color/secondDarkPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/submit" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

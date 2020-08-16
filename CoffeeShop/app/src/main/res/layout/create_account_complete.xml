@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkBackground"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/first_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name_title"
+        android:textColorHint="@color/registerHintColor"
+        android:textColor="@color/textDark"
+        android:layout_margin="10dp"
+        android:autofillHints="name"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/last_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name_hint"
+        android:textColorHint="@color/registerHintColor"
+        android:textColor="@color/textDark"
+        android:layout_margin="5dp"
+        android:autofillHints="lastname"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/text"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/done_complete_create_account_btn"/>
+
+
+</LinearLayout>

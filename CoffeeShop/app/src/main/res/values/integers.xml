@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="name_length">20</integer>
+    <integer name="lastname_length">30</integer>
+<!--    phone number length with number of space-->
+    <integer name="phone_number_format_length">14</integer>
+<!--    phone number length with number of space-->
+    <integer name="phone_number_length">11</integer>
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:padding="10dp"
+    tools:context=".ui.admin.AdminPage">
+
+    <!--    TODO: change background tint to background-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_dashboard" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/AdminPageHeader"
+                        android:text="@string/manage_items" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_break"
+                    android:background="@color/borderColor" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_new_item"
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_add_circle_outline"
+                    android:text="@string/add_new_item_btn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit_item"
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_edit"
+                    android:text="@string/edit_item_btn" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_categories" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/AdminPageHeader"
+                        android:text="@string/manage_categories" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_break"
+                    android:background="@color/borderColor" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_new_category"
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_add_circle_outline"
+                    android:text="@string/add_new_category_btn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/edit_category"
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_edit"
+                    android:text="@string/edit_category_btn" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_layers" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/AdminPageHeader"
+                        android:text="@string/manage_feeds" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/manage_feeds_hint" />
+
+                <View
+                    style="@style/line_break"
+                    android:background="@color/borderColor" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_add_circle_outline"
+                    android:text="@string/add_new_feed_btn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AdminPageButton"
+                    android:drawableStart="@drawable/ic_edit"
+                    android:text="@string/edit_item_btn" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_card_gift_card" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/AdminPageHeader"
+                        android:text="@string/discount_header" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/discount_hint" />
+
+                <View
+                    style="@style/line_break"
+                    android:background="@color/borderColor" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/discount_code_btn"
+                    style="@style/AdminPageButton"
+                    android:text="@string/discount_page" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</ScrollView>

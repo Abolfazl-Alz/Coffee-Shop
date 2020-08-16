@@ -1,0 +1,61 @@
+
+body {
+    background: #3e3e3e;
+    color: white;
+    font-family: Verdana, serif;
+
+}
+
+a {
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+a:checked {
+    color: red;
+}
+
+.home-panel {
+    background: #3b1e1e;
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: black 5px 8px 15px;
+}
+
+.home-panel .main {
+    padding: 25px;
+}
+
+.home-panel .header {
+    border-radius: 25px 25px 0 0;
+    background: ivory;
+    border: none;
+}
+
+.home-panel img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.home-panel h1 {
+    font-family: Verdana, serif;
+    color: white;
+    text-align: center;
+}
+
+.home-panel ul {
+    padding: 10px;
+    text-align: center;
+}
+
+.home-panel ul li {
+    float: left;
+    list-style: none;
+    margin-inline-end: 10px;
+    padding: 10px;
+}

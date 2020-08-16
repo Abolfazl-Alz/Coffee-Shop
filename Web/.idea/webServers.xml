@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e6f37303-9903-4d5a-a757-3095186f833c" name="coffe-shop" url="http://abolfazlalz.ir">
+        <fileTransfer rootFolder="/coffee-shop.abolfazlalz.ir" host="abolfazlalz.ir" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
